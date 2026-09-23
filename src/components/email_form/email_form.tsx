@@ -101,26 +101,29 @@ export function EmailForm({
         </button>
       </div>
       <output
-        className={`${styles.footer} ${isSent ? styles.sent : ""} ${
-          showError ? styles.error : ""
-        }`}
+        className={`${styles.footer} ${isSent ? styles.sent : ""} ${showError ? styles.error : ""
+          }`}
         aria-live="polite"
       >
+        {/* Keep inactive messages hidden before styles load, while reserving their space. */}
         <span
           className={`${styles.footerMessage} ${styles.footerPrimary}`}
           aria-hidden={isSent || showError}
+          style={{ visibility: isSent || showError ? "hidden" : "visible" }}
         >
           {footerIdleMessage}
         </span>
         <span
           className={`${styles.footerMessage} ${styles.footerSecondary}`}
           aria-hidden={!isSent || showError}
+          style={{ visibility: !isSent || showError ? "hidden" : "visible" }}
         >
           {footerSentMessage}
         </span>
         <span
           className={`${styles.footerMessage} ${styles.footerError}`}
           aria-hidden={!showError}
+          style={{ visibility: showError ? "visible" : "hidden" }}
         >
           This email is incorrect.
         </span>

@@ -18,13 +18,13 @@ export default function Page() {
 
         <Section paddingTop={60}>
           <Hero
-            title="App Title"
-            subtitle="Short app description that highlights what the app does and its key value"
+            title="Paglyph"
+            subtitle="Get fast, context-aware meanings for words as you read, and build your vocabulary along the way."
             media={
-              <Hero.Image
-                src="/app_view/screenshot_placeholder.png"
-                alt=""
-                bezel="iPhone 17 Black"
+              <Hero.Video
+                src="/paglyph_demo.mp4"
+                alt="Paglyph demo screen recording"
+                bezel="iPhone 17 Pro Silver"
               />
             }
             action={
@@ -33,7 +33,7 @@ export default function Page() {
                   providerConfig={{
                     provider: "loops",
                     config: {
-                      formId: "your-loops-form-id",
+                      formId: "cmudsbvul0cip0jz24kfprh0n",
                     },
                   }}
                 />

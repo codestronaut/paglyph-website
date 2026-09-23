@@ -1,111 +1,152 @@
-## Privacy Policy
+# Paglyph Privacy Policy
 
-Apple requires every app to have a proper privacy policy that explains how user data is collected, used, and protected.
+**Pre-launch draft — September 23, 2026**
 
-Depending on your app you might just use a simple, one paragraph privacy policy describing what data is collected (if any) in human friendly terms. But for more complex case you might need a more and more formal language.
+## Overview
 
-AI chatbot of choice is your best friend here. Here is a prompt template, customize and give it to AI, it should produce a decent first draft that you can iterate on further:
+Paglyph is a reading companion and vocabulary-learning app developed by Aditya Rohman, based in Indonesia.
 
-```
-You are a privacy-policy drafting assistant. Generate a clear, App Store–ready Privacy Policy for an iOS app.
+This draft explains the app’s planned privacy practices. We will update it before release to reflect the completed app and its final configuration.
 
-Constraints:
-- Output in plain English.
-- Use clear headings and short paragraphs.
-- Must match the data practices described below exactly (do not invent practices).
-- Include sections: Overview, Data We Collect, How We Use Data, Sharing, Third-Party Services, Data Retention, Security, Your Choices & Rights, Children’s Privacy, International Transfers, App Tracking Transparency, Push Notifications, Contact Us, Changes to This Policy.
-- Keep it suitable for a single webpage.
-- Ask follow up questions if any details are unclear.
+The website currently collects email addresses through its waitlist form. Joining the waitlist does not create a Paglyph app account.
 
-APP INFORMATION
-- App name: [APP_NAME]
-- Company / Developer name: [DEVELOPER_NAME]
-- Website: [WEBSITE_URL]
-- Support email: [SUPPORT_EMAIL]
-- Countries/regions offered: [REGIONS] (e.g., “Worldwide” or list)
-- Target audience age: [AGE_RATING] (e.g., 4+, 12+, 17+)
+## Data We Collect
 
-DATA COLLECTION SUMMARY (Apple “App Privacy” style)
-For each data type, specify: collected? (yes/no), linked to user? (yes/no), used for tracking? (yes/no), purposes.
-Use ONLY the items marked “yes”.
+**Account information.** When you sign in with Apple, we receive an Apple-provided identifier and your name and email address when supplied. Your email may be an Apple private relay address. We do not receive your Apple Account password.
 
-Data types (fill each line):
-- Contact info (name, email, phone): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Identifiers (user ID, device ID): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Usage data (product interaction, diagnostics): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Diagnostics (crash data, performance): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Purchases (purchase history): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Location (precise/approx): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- User content (photos, files, text): collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Health & fitness: collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Financial info: collected [YES/NO]; linked [YES/NO]; tracking [YES/NO]; purposes: [PURPOSES]
-- Other: [LIST_ANY_OTHER_APPLE_DATA_TYPES_USED]
+**Reading content.** Paglyph processes extracted words and sentences to provide dictionary definitions and contextual explanations. The API receives extracted text rather than captured page images. Page images are not synchronized through CloudKit.
 
-TRACKING (App Tracking Transparency)
-- Do you track users across apps/sites owned by other companies? [YES/NO/UNKNOWN]
-- If YES: describe tracking data and partners: [DETAILS]
-- If NO: state that the app does not track as defined by Apple.
+Saved words, associated sentences, and saved API responses are stored on your device and synchronized through CloudKit when available.
 
-ACCOUNT & AUTH
-- Does the app have accounts? [YES/NO]
-- Sign-in methods: [Apple ID / Email+Password / Google / etc.]
-- If accounts exist: what profile fields are stored: [FIELDS]
-- Password handling (if applicable): [e.g., “handled by Firebase Auth” / “stored hashed” / “N/A”]
+**Identifiers and usage information.** We process account and session identifiers, AI usage totals, and relevant installation and notification identifiers. These support authentication, subscription access, usage allowances, notifications, analytics, and security.
 
-PAYMENTS
-- Monetization model: [Free / Paid / IAP / Subscriptions / Ads]
-- Payment processor(s): [Apple In-App Purchase / Stripe / etc.]
-- If using Apple IAP: confirm you do not receive full card details: [YES/NO/UNKNOWN]
+**Diagnostics.** We use crash reports and technical information about the app and device to investigate problems and improve reliability.
 
-THIRD-PARTY SDKs & SERVICES
-List every SDK/service and what data it receives.
-For each item include: name, provider, purpose, data types shared, whether linked/tracking, and link to provider privacy policy.
+**Purchase information.** We process subscription status and transaction information needed to provide paid features and restore purchases. Apple handles payment processing; Paglyph does not receive your full payment-card details.
 
-Third parties (fill as list):
-1) [SERVICE_NAME] by [PROVIDER] — purpose: [PURPOSE]
-   - Data shared: [DATA_TYPES]
-   - Linked: [YES/NO/UNKNOWN]
-   - Tracking: [YES/NO/UNKNOWN]
-   - Provider policy: [URL]
-2) …
+**Support information.** If you contact us, we receive your email address, correspondence, and any information or attachments you choose to provide.
 
-Common examples to consider (remove if unused):
-- Analytics: [Firebase Analytics / Amplitude / Mixpanel / NONE]
-- Crash reporting: [Crashlytics / Sentry / NONE]
-- Ads: [AdMob / Meta Audience Network / NONE]
-- Attribution: [AppsFlyer / Adjust / Branch / NONE]
-- Cloud sync: [CloudKit / Firebase / custom backend / NONE]
-- Payments: [Apple IAP / Stripe / NONE]
-- Customer support: [Intercom / Zendesk / email only / NONE]
-- Push notifications: [APNs only / OneSignal / Firebase Messaging / etc.]
-- Maps: [Apple Maps / Google Maps / NONE]
+Service providers may also process network information, such as IP addresses, when delivering and protecting their services.
 
-DATA STORAGE & RETENTION
-- Where is data stored? [On-device only / iCloud / CloudKit / Your servers / Vendor servers]
-- If on your servers: hosting provider and regions: [DETAILS]
-- Retention rules:
-  - Account data retained until: [e.g., deletion request / X days after inactivity / UNKNOWN]
-  - Logs/diagnostics retained for: [DURATION]
-  - Backups retained for: [DURATION]
-- Data deletion method:
-  - In-app deletion: [YES/NO]
-  - Email request: [YES/NO]
-  - Steps user must take: [DETAILS]
+## How We Use Data
 
-CHILDREN
-- Is the app directed to children under 13? [YES/NO]
-- If NO: state you do not knowingly collect data from children under 13.
-- If YES: describe parental consent flow and data limits: [DETAILS]
+We use information to:
 
-SECURITY
-Describe security measures accurately:
-- Transport security: [HTTPS/TLS/ATS]
-- At-rest encryption: [YES/NO/UNKNOWN]
-- Access controls: [DETAILS/UNKNOWN]
+- Create and maintain your account.
+- Provide dictionary lookups and AI explanations.
+- Store and synchronize your vocabulary library.
+- Provide subscriptions and restore purchases.
+- Enforce AI usage allowances and prevent abuse.
+- Deliver notifications.
+- Understand feature usage, troubleshoot problems, and improve the app.
+- Respond to support and privacy requests.
 
-CONTACT
-- Privacy contact email: [PRIVACY_EMAIL or SUPPORT_EMAIL]
-- Mailing address (optional): [ADDRESS or NONE]
+AI allowance records contain usage totals associated with your account, rather than the text you read. Backend operational logs exclude reading text, AI responses, and credentials.
 
-Now generate the full Privacy Policy.
-```
+## Sharing
+
+We share information with the service providers needed to operate the relevant features. Each provider receives information appropriate to its role; not every provider receives your reading content.
+
+Our planned practices do not include selling personal information or sharing it for advertising across other companies’ apps and websites.
+
+We may disclose information where required by applicable law.
+
+## Third-Party Services
+
+**Apple.** Sign in with Apple provides authentication. CloudKit synchronizes saved vocabulary records when available. Apple In-App Purchase processes subscriptions, and Apple Push Notification service supports notification delivery. [Apple Privacy Policy](https://www.apple.com/legal/privacy/en-ww/)
+
+**Cloudflare.** Cloudflare Workers and D1 host the API and process account records, sessions, usage counters, dictionary requests, and operational information.
+
+The backend processes reading text to answer requests but does not maintain a permanent reading-history or vocabulary-library database. [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+
+**Google Gemini.** Contextual explanations use the paid Gemini Developer API. Relevant reading text and dictionary context are sent to Google to generate a response. We do not intentionally include your account identifier, name, email, or subscription details in these requests. Reading text itself may nevertheless contain personal information.
+
+The planned configuration uses a billing-enabled API project, with optional prompt logging and voluntary data sharing disabled. Google states that paid-service prompts and responses are not used to improve its products. Separate abuse-monitoring retention and possible review still apply. [Gemini API Terms](https://ai.google.dev/gemini-api/terms), [Google Privacy Policy](https://policies.google.com/privacy)
+
+**Firebase.** Google Analytics for Firebase helps us understand app usage. Firebase Crashlytics provides crash reporting. Firebase Cloud Messaging supports remote notifications. These services process relevant interaction data, technical information, and installation or notification identifiers. [Firebase Privacy Information](https://firebase.google.com/support/privacy)
+
+**RevenueCat.** RevenueCat processes app user identifiers and purchase information to manage subscription access and restoration. [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy)
+
+**Support email.** Our support address uses Gmail. Correspondence and attachments sent to that address are processed through Google’s email service. [Google Privacy Policy](https://policies.google.com/privacy)
+
+## Data Retention
+
+Our planned retention periods are:
+
+- **Account profile:** While your account exists; removed from active systems within 30 days of a verified deletion request.
+- **Authentication sessions:** Revoked when account deletion is initiated; expired records removed automatically.
+- **Monthly AI usage counters:** Current month plus three previous months during normal operation; account deletion also initiates removal.
+- **Backend operational logs:** Up to 30 days, or a shorter configured period.
+- **Saved vocabulary:** Until you delete the records or your account and library.
+- **Support correspondence:** 12 months after the conversation closes, unless needed for an unresolved matter or applicable obligation.
+
+Provider retention can differ. Google currently documents 55-day retention of Gemini prompts, context, and outputs for abuse monitoring. [Google Abuse-Monitoring Policy](https://ai.google.dev/gemini-api/docs/usage-policies)
+
+Firebase documents that Crashlytics retains crash traces and associated identifiers for 90 days before beginning removal. Cloud Messaging installation identifiers may take up to 180 days to be removed from live and backup systems after the relevant deletion request. [Firebase Retention Information](https://firebase.google.com/support/privacy)
+
+Deleting active records does not necessarily erase recovery copies immediately. The final policy will specify the remaining configured analytics and backup retention periods.
+
+## Security
+
+The planned safeguards include HTTPS connections, protected credential storage, restricted access, server-side provider secrets, and exclusion of reading content and credentials from operational logs.
+
+No method of storage or transmission provides an absolute security guarantee.
+
+## Your Choices & Rights
+
+The app will support account deletion, including deletion of your vocabulary library and initiation of removal of synchronized CloudKit records and applicable provider records.
+
+Deletion may take time to propagate. Offline devices may not reflect changes until they reconnect. We cannot promise to remotely erase information immediately from every offline device.
+
+CloudKit synchronization is automatically enabled when available. Uninstalling Paglyph does not itself delete your backend account, synchronized records, or Apple subscription.
+
+Subscriptions are managed through Apple’s subscription settings. Deleting your Paglyph account does not automatically cancel a subscription.
+
+Depending on applicable law, you may have rights to access, correct, delete, obtain a copy of, or restrict certain uses of your personal information, withdraw consent where processing relies on it, or raise a complaint with a relevant authority. Contact us to make a request. We may need to verify your identity.
+
+## Children’s Privacy
+
+Paglyph is intended for adults aged 18 and older. It is not intended for children or teenagers under 18.
+
+If you believe an underage person has provided personal information to us, please contact us so we can investigate and address it.
+
+## International Transfers
+
+Aditya Rohman operates from Indonesia. Our providers may process information in other countries, including countries outside Indonesia and your country of residence.
+
+We do not promise that all information remains in one country. Provider processing is subject to the applicable service and data-protection terms.
+
+## App Tracking Transparency
+
+Paglyph’s planned practices do not include tracking users across other companies’ apps or websites for targeted advertising or advertising measurement, as defined by Apple.
+
+Analytics, crash reporting, and account identifiers may still be used for the purposes described here. The final release configuration will be checked against this statement.
+
+## Push Notifications
+
+Paglyph will use Firebase Cloud Messaging and Apple Push Notification service for remote notifications.
+
+You can manage notification permission in iOS Settings. Disabling notifications does not necessarily delete previously collected notification identifiers or records.
+
+## Website Waitlist
+
+The waitlist form asks for your email address to register your interest in Paglyph.
+
+For questions about your waitlist information or to request removal, contact hello.adityarohman@gmail.com.
+
+The app services described above do not all apply merely because you join the waitlist.
+
+## Contact Us
+
+**Aditya Rohman**  
+Indonesia  
+**Email:** hello.adityarohman@gmail.com  
+**Website:** https://paglyph.app/
+
+## Changes to This Policy
+
+We will update this page as Paglyph’s features and data practices are finalized. The final policy will include an effective date. Later revisions will show an updated date.
+
+---
+
+**Outside the policy — still to finalize:** Firebase Analytics collection, approximate location, consent controls and retention; notification purposes; backup periods; image disposal; RevenueCat attributes and deletion handling; and the waitlist’s storage/email provider, email-use scope, and retention. Until those are settled, keep this labeled as a pre-launch draft.

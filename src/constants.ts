@@ -6,7 +6,7 @@ import { ColorScheme } from "./types/shared";
  * "light" - forces your website to always use light theme
  * "dark" - forces your website to always use dark theme
  */
-export const THEME: "system" | "light" | "dark" = "system";
+export const THEME: "system" | "light" | "dark" = "light";
 
 /**
  * Your App Store App ID without the 'id' prefix.
@@ -44,10 +44,10 @@ export const COLORS: ColorScheme = {
     "text-primary": "#000000",
     "text-secondary": "rgba(60, 60, 67, 0.60)",
     "fill-0": "#FFFFFF",
-    "fill-1": "#F2F2F7",
-    "fill-2": "#E5E5EA",
-    "fill-3": "#D1D1D6",
-    "accent-brand": "#000000",
+    "fill-1": "#F5F4F5",
+    "fill-2": "#EBE9EB",
+    "fill-3": "#C5C0C5",
+    "accent-brand": "#8B79D9",
     "accent-orange": "#FF8D28",
     "accent-green": "#34C759",
     "accent-red": "#FF3B30",
@@ -64,7 +64,7 @@ export const COLORS: ColorScheme = {
     "fill-1": "#121214",
     "fill-2": "#272729",
     "fill-3": "#3A3A3C",
-    "accent-brand": "#FFFFFF",
+    "accent-brand": "#8B79D9",
     "accent-orange": "#FF9230",
     "accent-green": "#30D158",
     "accent-red": "#FF453A",
@@ -78,4 +78,4 @@ export const COLORS: ColorScheme = {
 
 export const MAX_RELEASE_NOTES_PER_PAGE = 5;
 
-export const IS_WAITLIST_ENABLED = false;
+export const IS_WAITLIST_ENABLED = true;

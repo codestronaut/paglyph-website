@@ -16,13 +16,13 @@ export const metadata: Metadata = {
    * Recommended length for title is max 60 characters.
    * Recommended length for description is max 160 characters.
    */
-  title: "Website title",
-  description: "Website description",
+  title: "Paglyph",
+  description: "Get fast, context-aware meanings for words as you read, and build your vocabulary along the way",
 
   /**
    * Your website URL.
    */
-  metadataBase: new URL("https://app-website-url.com"),
+  metadataBase: new URL("https://paglyph.app/"),
 
   /**
    * Info inside `openGraph` and `twitter` is used to show rich previews
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
    * run the dev server and go to `http://localhost:3000/open-graph-builder`.
    */
   openGraph: {
-    title: "App title",
-    description: "App description",
-    url: "https://app-website-url.com",
+    title: "Paglyph",
+    description: "Get fast, context-aware meanings for words as you read, and build your vocabulary along the way",
+    url: "https://paglyph.app/",
     images: [
       {
         url: "/og-preview.png",
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App title",
-    description: "App description",
+    title: "Paglyph",
+    description: "Get fast, context-aware meanings for words as you read, and build your vocabulary along the way",
     images: ["/og-preview.png"],
   },
 };
@@ -101,7 +101,7 @@ export default function RootLayout({
           <CompactFooter
             appIcon={
               <AppIcon
-                src="/app_view/icon_placeholder.png"
+                src="/app_brand_transparent.png"
                 filter="grayscale"
               />
             }
@@ -114,19 +114,12 @@ export default function RootLayout({
               },
               {
                 label: "Follow Updates",
-                href: "https://your-social-media.com",
+                href: "https://www.threads.com/@adityarhmaan__",
+                external: true,
               },
             ]}
-            footnoteLeading={`© ${new Date().getFullYear()}. All rights reserved.`}
-            footnoteTrailing={
-              // I'd appreciate if you leave this link here, but feel free to remove it, no hard feelings :)
-              <>
-                Website is built with{" "}
-                <a target="_blank" href="https://appview.dev">
-                  AppView
-                </a>
-              </>
-            }
+            footnoteLeading={`© ${new Date().getFullYear()} Paglyph. All rights reserved.`}
+            footnoteTrailing={"Built with ❤️ from Lombok ⛰️"}
           />
         </ThemeProvider>
 
